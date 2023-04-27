@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5vh;
+    padding-left: 10vw;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.header img{
+    width: 5vw;
+}
+.header ul{
+    padding-right: 10vw;
+    list-style: none;
+}
+.header ul li{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    float: left;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.header ul li:hover{
+    color: #036635;
+    cursor: pointer;
+    text-decoration: underline #036635;
+}
+.circle{
+    height: 65vw;
+    width: 65vw;
+    border-radius: 50%;
+    background-color: #036635;
+    z-index: -2;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: -25vw;
+    margin-bottom: -30vw;
+}
+.main{
+    color: rgb(52, 52, 52);
+    display: flex;
+    position: absolute;
+    margin-left: 10vw;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    width: 40vw;
+    margin-right: 10vw;
+}
+.main h1{
+    font-size: 4rem;
+}
+.main h1 span{
+    font-family: 'Open Sans', sans-serif;
+    color:#036635;
+    font-size: 5rem;
+    font-weight: 700;
+}
+.main p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.cup{
+    height: 75vh;
+    width: auto;
+    transform: rotate(-20deg);
+}
+.main h2{
+    margin-top: 5vh;
+    background-color: #036635;
+    color: white;
+    padding: 10px 15px;
+    width: fit-content;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.main h2:hover{
+    cursor: pointer;
+    background-color: rgb(216, 216, 216);
+    color: #036635;
+}
+.icons{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.icons img{
+    filter: invert(1);
+    margin-top: 1.5rem;
+    width: 2vw;
+    mix-blend-mode: difference;
+    transition: all 0.3s ease;
+}
+.icons img:hover{
+    cursor: pointer;
+    filter: invert(0.8);
+}
