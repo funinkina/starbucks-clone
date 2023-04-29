@@ -23,7 +23,7 @@
     margin-right: 3vw;
     float: left;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.3rem;
     transition: all 0.3s ease;
 }
 .header ul li:hover{
@@ -46,18 +46,16 @@
 .main{
     color: rgb(52, 52, 52);
     display: flex;
-    position: absolute;
-    margin-left: 10vw;
-    top: 50%;
-    transform: translateY(-50%);
-    justify-content: center;
+    width: 80vw;
+    margin-inline: auto;
+    justify-content: space-between;
     align-items: center;
 }
 .text{
-    width: 40vw;
-    margin-right: 10vw;
+    width: 37vw;
 }
 .main h1{
+    line-height: 1.1;
     font-size: 4rem;
 }
 .main h1 span{
@@ -67,17 +65,21 @@
     font-weight: 700;
 }
 .main p{
-    font-size: 1rem;
+    margin-top: 2vh;
+    text-align: justify;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 .cup{
-    height: 75vh;
+    margin-right: 5vw;
+    height: 45rem;
     width: auto;
-    transform: rotate(-20deg);
+    transform: rotate(-17deg);
 }
 .main h2{
-    margin-top: 5vh;
+    margin-top: 3vh;
     background-color: #036635;
+    border: 1px solid #036635;
     color: white;
     padding: 10px 15px;
     width: fit-content;
@@ -86,10 +88,12 @@
 }
 .main h2:hover{
     cursor: pointer;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(221, 221, 221);
     color: #036635;
+    border: 1px solid #036635;
 }
 .icons{
+    filter: invert(1);
     margin-right: 50px;
     display: flex;
     flex-direction: column;
@@ -99,13 +103,12 @@
     transform: translateY(-50%);
 }
 .icons img{
-    filter: invert(1);
-    margin-top: 1.5rem;
+    z-index: 2;
+    margin-top: 2rem;
     width: 2vw;
-    mix-blend-mode: difference;
     transition: all 0.3s ease;
 }
 .icons img:hover{
     cursor: pointer;
-    filter: invert(0.8);
+    transform: scale(1.3);
 }
